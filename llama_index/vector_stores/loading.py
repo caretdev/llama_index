@@ -1,6 +1,7 @@
 from typing import Dict, Type
 
 from llama_index.vector_stores.chroma import ChromaVectorStore
+from llama_index.vector_stores.iris import IRISVectorStore
 from llama_index.vector_stores.lantern import LanternVectorStore
 from llama_index.vector_stores.pinecone import PineconeVectorStore
 from llama_index.vector_stores.postgres import PGVectorStore
@@ -15,6 +16,7 @@ LOADABLE_VECTOR_STORES: Dict[str, Type[BasePydanticVectorStore]] = {
     PGVectorStore.class_name(): PGVectorStore,
     WeaviateVectorStore.class_name(): WeaviateVectorStore,
     LanternVectorStore.class_name(): LanternVectorStore,
+    IRISVectorStore.class_name(): IRISVectorStore,
 }
 
 

@@ -6321,6 +6321,20 @@ pymysql = ["pymysql"]
 sqlcipher = ["sqlcipher3_binary"]
 
 [[package]]
+name = "sqlalchemy-iris"
+version = "0.12.1"
+description = "InterSystems IRIS for SQLAlchemy"
+optional = true
+python-versions = ">=3.8"
+files = [
+    {file = "sqlalchemy-iris-0.12.1.tar.gz", hash = "sha256:2a02f754209ea33e0c57bce9d585d8f0d3e1bcd3dffb355da7021d12545fd422"},
+    {file = "sqlalchemy_iris-0.12.1-py3-none-any.whl", hash = "sha256:24ae68bab915c023bb24dc6c33aad1a7f7b7fd5e451497a52ff0c2e84eec9203"},
+]
+
+[package.dependencies]
+SQLAlchemy = ">=1.3"
+
+[[package]]
 name = "srsly"
 version = "2.4.8"
 description = "Modern high-performance serialization utilities for Python"

@@ -1,6 +1,5 @@
 """Vector stores."""
 
-
 from llama_index.vector_stores.astra import AstraDBVectorStore
 from llama_index.vector_stores.awadb import AwaDBVectorStore
 from llama_index.vector_stores.azurecosmosmongo import AzureCosmosDBMongoDBVectorSearch
@@ -20,6 +19,7 @@ from llama_index.vector_stores.elasticsearch import (
 )
 from llama_index.vector_stores.epsilla import EpsillaVectorStore
 from llama_index.vector_stores.faiss import FaissVectorStore
+from llama_index.vector_stores.iris import IRISVectorStore
 from llama_index.vector_stores.lancedb import LanceDBVectorStore
 from llama_index.vector_stores.lantern import LanternVectorStore
 from llama_index.vector_stores.metal import MetalVectorStore
@@ -103,4 +103,5 @@ __all__ = [
     "AzureCosmosDBMongoDBVectorSearch",
     "LanternVectorStore",
     "MongoDBAtlasVectorSearch",
+    "IRISVectorStore",
 ]
